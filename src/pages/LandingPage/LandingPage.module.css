@@ -1,0 +1,29 @@
+.LandingPage {
+  text-align: center;
+  background: white;
+  width: 300px;
+  padding: 2em;
+  border-radius: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.LandingPage input {
+  padding: 0.5em;
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+
+.LandingPage label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em auto;
+}
+
+.LandingPage h1 {
+  margin: 0;
+}

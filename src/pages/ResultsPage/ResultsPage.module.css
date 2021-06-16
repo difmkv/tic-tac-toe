@@ -1,0 +1,6 @@
+.ResultsPage {
+  text-align: center;
+  margin: 3em auto;
+  overflow: scroll;
+  max-height: 500px;
+}

@@ -1,0 +1,7 @@
+.Square {
+  background: #000;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  outline: none;
+}

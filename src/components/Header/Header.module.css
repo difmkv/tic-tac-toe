@@ -1,0 +1,23 @@
+.Header {
+  width: 100%;
+  text-align: center;
+  background-color: darkseagreen;
+  padding: 0.5em;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Header a {
+  text-decoration: none;
+}
+
+.Header nav a {
+  margin: 0 1em;
+}
+
+.Logo {
+  font-size: 40px;
+}
