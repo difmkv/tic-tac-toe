@@ -1,3 +1,4 @@
+import * as actionTypes from "./actionTypes";
 import {
   clone,
   flatten,
@@ -12,15 +13,15 @@ const NEXT_TURN = {
 };
 
 export const gameReducer = (state, action) => {
-  if (state.status === "success" && action.type !== "RESET") {
+  if (state.status === "success" && action.type !== actionTypes.RESET) {
     return state;
   }
 
   switch (action.type) {
-    case "RESET":
+    case actionTypes.RESET:
       return getInitialState();
 
-    case "CLICK": {
+    case actionTypes.CLICK: {
       const { x, y } = action.payload;
       const { grid, turn } = state;
 

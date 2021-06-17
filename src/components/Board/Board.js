@@ -1,16 +1,16 @@
 import { Square } from "../Square/Square";
 import * as classes from "./Board.module.css";
 
-export const Board = ({ squares, onClick }) => (
+export const Board = ({ grid, onClick }) => (
   <div className={classes.Board}>
-    {squares.map((row, rowIdx) =>
+    {grid.map((row, rowIdx) =>
       row.map((value, colIdx) => (
         <Square
           key={`${colIdx}-${rowIdx}`}
+          value={value}
           onClick={() => {
             onClick(colIdx, rowIdx);
           }}
-          value={value}
         />
       ))
     )}

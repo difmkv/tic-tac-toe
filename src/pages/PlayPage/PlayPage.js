@@ -36,7 +36,7 @@ export function PlayPage() {
       <p>
         ➡️ Next Player {turn}: {names[turn]}
       </p>
-      <Board squares={grid} onClick={handleClick} />
+      <Board grid={grid} onClick={handleClick} />
       {gameOverCallToAction}
     </div>
   );
